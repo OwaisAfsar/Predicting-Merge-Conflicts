@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# Predicting Merge Conflicts using Deep Learning
 
-You can use the [editor on GitHub](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Perform the prediction on merge conflicts using deep learning algorithms (Deep Neural Networks, Long Short-Term Memory and Gated Recurrent Unit). 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Two different methodologies were used for considering the variables:
 
-### Markdown
+* First, all variables considered for the merge conflicts prediction.
+* Second, Principal Component Analysis (PCA) is used to group the variable by removing the overfitting and multicollinearity. Furthermore, PCA group variables are used for the prediction of merge conflicts.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Point for running the code:
+* Every function is written in `main.py`, just need to run this script.
+* Separately run the files `PCA.R` and `ROSE_DIT.R` using **R**. 
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Files:
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- [Data: CSV Files](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/tree/main/CSVFiles)
+- [ChiSquareTest.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/ChiSquareTest.py)
+- [DataModelling.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/DataModelling.py)
+- [Data_Imbalance_Technique.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/Data_Imbalance_Technique.py)
+- [GRU.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/GRU.py)
+- [GRU_PCA.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/GRU_PCA.py)
+- [Hyperparameter.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/Hyperparameter.py)
+- [LSTM.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/LSTM.py)
+- [LSTM_PCA.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/LSTM_PCA.py)
+- [LinearRegressionModel.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/LinearRegressionModel.py)
+- [MLP.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/MLP.py)
+- [MLP_PCA.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/MLP_PCA.py)
+- [PCA.R](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/PCA.R)
+- [PCA.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/PCA.py)
+- [Rose_DIT.R](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/Rose_DIT.R)
+- [Utils.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/Utils.py)
+- [main.py](https://github.com/OwaisAfsar/Predicting-Merge-Conflicts/blob/main/main.py)
